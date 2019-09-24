@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SahiCareer</title>
+  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="description" content=" SahiCareer Counselling Demo">
+  <meta name="author" content="Tapas Mondal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 bg-gray" >
+			<h3 class="text-center m-15">SahiCareer Counselling Demo</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="container">
+			<div class="row q-row">
+				<form name="from1" onsubmit = "return validateform1()">
+					<div class="form-group">
+						<div class="col-sm-6">
+							<p class="question"><span>1. </span>Tell me about yourself ? </p>
+						</div>
+						<div class="col-sm-6 icon-row">
+							<select class ="select-lang" id="sel1">
+								<option>English</option>
+								<option>Hindi</option>
+								<option>Bengali</option>
+								<option>Kannada</option>
+							</select>
+							<i class='text-font' style='padding-left: 10px;'>A-</i>
+							<i class='text-font'> A+  </i>
+							<i class='fa fa-volume-up text-volume'> </i>
+							<i class='fa fa-microphone text-microphone' ></i>
+							<i class="fa fa-info-circle text-volume"></i>
+						</div>
+						<div class="col-md-12">
+							 <textarea class="form-control" rows="5" name="q1"></textarea>
+							 <p id="error1" style="color:red;display:none;"></p>
+						</div>
+						<div class="col-md-12 text-right p-8-15" >
+							 <button type="submit" class="btn btn-info">Submit your answer</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row q-row">
+				<form>
+					<div class="form-group">
+						<div class="col-sm-6">
+							<p class="question"><span>2. </span>Best Career Pathway Matching </p>
+						</div>
+						<div class="col-sm-6 icon-row">
+							<select class ="select-lang" id="sel1">
+								<option>English</option>
+								<option>Hindi</option>
+								<option>Bengali</option>
+								<option>Kanada</option>
+							</select>
+							<i class='text-font' style='padding-left: 10px;'>A-</i>
+							<i class='text-font'> A+  </i>
+							<i class='fa fa-volume-up text-volume'> </i>
+							<i class='fa fa-microphone text-microphone' ></i>
+							<i class="fa fa-info-circle text-volume"></i>
+						</div>
+						<div class="col-md-12">
+							 <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="col-md-12 text-right p-8-15" >
+							 <button type="button" class="btn btn-info">Submit</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="row q-row">
+				<form>
+					<div class="form-group">
+						<div class="col-sm-6">
+							<p class="question"><span>3. </span>How to pursue ?</p>
+						</div>
+						<div class="col-sm-6 icon-row">
+							<select class ="select-lang" id="sel1">
+								<option>English</option>
+								<option>Hindi</option>
+								<option>Bengali</option>
+								<option>Kanada</option>
+							</select>
+							<i class='text-font' style='padding-left: 10px;'>A-</i>
+							<i class='text-font'> A+  </i>
+							<i class='fa fa-volume-up text-volume'> </i>
+							<i class='fa fa-microphone text-microphone' ></i>
+							<i class="fa fa-info-circle text-volume"></i>
+						</div>
+						<div class="col-md-12">
+							 <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="col-md-12 text-right p-8-15" >
+							 <button type="button" class="btn btn-info">Submit</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row q-row">
+				<form>
+					<div class="form-group">
+						<div class="col-sm-6">
+							<p class="question"><span>4. </span>Future Outlook </p>
+						</div>
+						<div class="col-sm-6 icon-row">
+							<select class ="select-lang" id="sel1">
+								<option>English</option>
+								<option>Hindi</option>
+								<option>Bengali</option>
+								<option>Kanada</option>
+							</select>
+							<i class='text-font' style='padding-left: 10px;'>A-</i>
+							<i class='text-font'> A+  </i>
+							<i class='fa fa-volume-up text-volume'> </i>
+							<i class='fa fa-microphone text-microphone' ></i>
+							<i class="fa fa-info-circle text-volume"></i>
+						</div>
+						<div class="col-md-12">
+							 <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="col-md-12 text-right p-8-15" >
+							 <button type="button" class="btn btn-info">Submit</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row q-row">
+				<form>
+					<div class="form-group">
+						<div class="col-sm-6">
+							<p class="question"><span>5. </span>Question related to their family? </p>
+						</div>
+						<div class="col-sm-6 icon-row">
+							<select class ="select-lang" id="sel1">
+								<option>English</option>
+								<option>Hindi</option>
+								<option>Bengali</option>
+								<option>Kanada</option>
+							</select>
+							<i class='text-font' style='padding-left: 10px;'>A-</i>
+							<i class='text-font'> A+  </i>
+							<i class='fa fa-volume-up text-volume'> </i>
+							<i class='fa fa-microphone text-microphone' ></i>
+							<i class="fa fa-info-circle text-volume"></i>
+						</div>
+						<div class="col-md-12">
+							 <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="col-md-12 text-right p-8-15" >
+							 <button type="button" class="btn btn-info">Submit</button> 
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="row q-row">
+				<form>
+					<div class="form-group">
+						<div class="col-sm-6">
+							<p class="question"><span>6. </span>Which occupation you are most interested in ? </p>
+						</div>
+						<div class="col-sm-6 icon-row">
+							<select class ="select-lang" id="sel1">
+								<option>English</option>
+								<option>Hindi</option>
+								<option>Bengali</option>
+								<option>Kanada</option>
+							</select>
+							<i class='text-font' style='padding-left: 10px;'>A-</i>
+							<i class='text-font'> A+  </i>
+							<i class='fa fa-volume-up text-volume'> </i>
+							<i class='fa fa-microphone text-microphone' ></i>
+							<i class="fa fa-info-circle text-volume"></i>
+						</div>
+						<div class="col-md-12">
+							 <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="col-md-12 text-right p-8-15" >
+							 <button type="button" class="btn btn-info">Submit</button> 
+						</div>
+					</div>
+				</form>
+			</div>		
+			<div class="row q-row">
+				<form>
+					<div class="form-group">
+						<div class="col-sm-6">
+							<p class="question"><span>7. </span>What are your hobbies ?</p>
+						</div>
+						<div class="col-sm-6 icon-row">
+							<select class ="select-lang" id="sel1">
+								<option>English</option>
+								<option>Hindi</option>
+								<option>Bengali</option>
+								<option>Kanada</option>
+							</select>
+							<i class='text-font' style='padding-left: 10px;'>A-</i>
+							<i class='text-font'> A+  </i>
+							<i class='fa fa-volume-up text-volume'> </i>
+							<i class='fa fa-microphone text-microphone' ></i>
+							<i class="fa fa-info-circle text-volume"></i>
+						</div>
+						<div class="col-md-12">
+							 <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="col-md-12 text-right p-8-15" >
+							 <button type="button" class="btn btn-info">Submit</button> 
+						</div>
+					</div>
+				</form>
+			</div>	
+
+
+
+
+
+		
+
+
+	<div class="row">
+		<div class="col-md-12 bg-gray" >
+			<h3 class="text-center m-15">SahiCareer Counselling Demo</h3>
+		</div>
+	</div>
+
+
+
+
+
+		</div>
+    </div>
+
+</div>
+
+</body>
+</html>
