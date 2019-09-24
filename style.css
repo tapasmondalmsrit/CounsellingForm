@@ -1,0 +1,29 @@
+.bg-gray{
+	background:gray;
+}
+.q-row{
+	padding: 5px;margin: 15px;border: 1px solid  gray;border-radius: 4px;background: #f3f3f3;
+}
+.question{
+	font-size: 18px;margin-top: 12px;margin-bottom: 0px;padding: 0px 1px;
+}
+.icon-row{
+	text-align: right;padding:4px 10px;
+}
+.select-lang{
+	margin-top: -2px;margin-bottom: 9px;width: 100px;display: inline-block;padding: 2px 2px;border-radius: 4px;
+}
+.text-font{
+	font-size: 20px;padding:0px 8px;font-weight: bold;padding-right: 5px;
+}
+.text-volume{
+font-size: 20px;padding:0px 8px;
+}
+.text-microphone{
+	font-size: 18px;padding: 0px 8px;
+}
+.p-8-15{
+	padding: 8px 15px;
+
+}
+.m-15{margin:15px;}
