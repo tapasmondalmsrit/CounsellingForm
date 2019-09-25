@@ -1,0 +1,16 @@
+cd - chnage directory
+ls - listing the files
+
+1)First open folder which folder you want to upload to git..
+
+git commands:-
+-------------
+1) git init                              	ex: git init
+2) git remote add origin <server>               ex: git remote add origin https://github.com/anand-kr/ad-calculator.git
+3)git add -A                                    ex: git add -A
+4)git commit -m "Commit message"                ex: git commit -m "add my first project"
+6)git push origin master
+7)git remote set-url origin new.git.url/here    ex: git set-url origin https://anand-android@bitbucket.org/anand-android/android-projects.git
+
+
+
